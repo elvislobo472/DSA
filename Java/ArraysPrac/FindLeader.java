@@ -1,35 +1,33 @@
 package Coding.Java.ArraysPrac;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class FindLeader {
 
-    public static int findLeader(int[] arr) {
-        int id = 0;
-        for(int i = 0; i < arr.length; i++){
-            for(int j = i+1; j < arr.length; j++){
-                if(arr[i] > arr[j]){
-                    arr[id++] = arr[i];
-                }else{
-                    id = 0;break;
-                }
+    public static void findLeaders(int[] arr) {
+
+        ArrayList<Integer> leaders = new ArrayList<>();
+
+        int maxFromRight = arr[arr.length - 1];
+        leaders.add(maxFromRight);
+
+        for (int i = arr.length - 2; i >= 0; i--) {
+            if (arr[i] > maxFromRight) {
+                maxFromRight = arr[i];
+                leaders.add(arr[i]);
             }
         }
 
-        return id;
+        Collections.reverse(leaders);
 
+        for (int leader : leaders) {
+            System.out.print(leader + " ");
+        }
     }
 
-
     public static void main(String[] args) {
-
-
         int[] arr = {16, 17, 4, 3, 5, 2};
-
-
-        int id = findLeader(arr);
-
-
-        for(int i = 0; i < id; i++){
-            System.out.print(arr[i] + " ");
-        }
+        findLeaders(arr);
     }
 }
