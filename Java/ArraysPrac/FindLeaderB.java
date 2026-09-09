@@ -1,6 +1,6 @@
 package Coding.Java.ArraysPrac;
 
-import java.sql.SQLOutput;
+
 
 public class FindLeaderB {
 
