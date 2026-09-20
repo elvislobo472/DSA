@@ -26,7 +26,7 @@ public class FrequentCharacter {
         }
 
 
-        System.out.println(mostFreq +" "+ maxCount);
+        System.out.println("Here is the answer:" + mostFreq +" "+ maxCount);
 
     }
 
