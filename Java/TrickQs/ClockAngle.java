@@ -1,4 +1,4 @@
-package Coding.Java.StringsPrac;
+package Coding.Java.TrickQs;
 
 import java.util.Scanner;
 
