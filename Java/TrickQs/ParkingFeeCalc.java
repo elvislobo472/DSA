@@ -30,7 +30,7 @@ public class ParkingFeeCalc {
 
     public static void main(String[] args) {
 
-        int hours = 10;
+        int hours = 9;
 
 
         parkingFeeCalculator(hours);
