@@ -4,4 +4,4 @@
 
 # Java compiled files
 out/
-*.class
+*.class.DS_Store
