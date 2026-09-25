@@ -49,6 +49,16 @@ public class MaxSubArrSum {
         System.out.println(maxSum2);
 
 
+        int[] arr3 = {-4, -4, -4, -5, -7, -2, -8};
+
+        int maxSum3 = maxSArrSum(arr3);
+
+
+        System.out.println(maxSum3);
+
+
+
+
 
     }
 }
