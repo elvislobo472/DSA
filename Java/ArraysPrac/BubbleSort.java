@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BubbleSort {
 
     //Bubble Sort
-
+    //Time Complexity is O(n^2)
     public static void sortedArray(int[] arr){
 
 
