@@ -14,7 +14,7 @@ public class TwoSum {
     }
 
     public static void main(String[] args) {
-        int[] arr = {2, 7, 11, 15, -2};
+        int[] arr = {5, 2, 11, 7, 15, -2};
         int target = 9;
         twoSum(arr, target);
 
