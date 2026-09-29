@@ -15,8 +15,10 @@ public class ClosestTarget {
             sum = arr[l] + arr[r];
 
 
+            // '>' keeps the first pair encountered with the minimum difference.
+            // Using '>=' would replace it with a later pair having the same difference.
 
-            if(difference >= Math.abs(target - sum)){   //condition will get all the pairs having same difference, just > will give the first encountered pair with the least difference
+            if(difference > Math.abs(target - sum)){
                 difference =  Math.abs(target - sum);
                 System.out.println(arr[l] + " "+ arr[r]);
             }
@@ -45,9 +47,9 @@ public class ClosestTarget {
 
 
     public static void main(String[] args) {
-        int[] arr= {1, 3, 5, 7, 10, 12};
+        int[] arr= {1, 3, 5, 8, 10, 12};
 
-        int target = 14;
+        int target = 7;
 
         closeTarget(arr, target);
 
