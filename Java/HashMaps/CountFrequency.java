@@ -1,7 +1,6 @@
 package Coding.Java.HashMaps;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class CountFrequency {
 
