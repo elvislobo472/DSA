@@ -42,7 +42,7 @@ public class MaximumSubArraySum {
         System.out.println(maxSum2);
 
 
-        int[] arr3 = {-4, -4, -4, -5, -7, -2, -8};
+        int[] arr3 = {-4, -4, -4, -5, -7, -2, -8, -6};
 
         int maxSum3 = maxSubarraySum(arr3);
 
