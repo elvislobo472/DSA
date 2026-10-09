@@ -25,9 +25,20 @@ public class TotalMarks {
 
 
         float sum = 0;
+        int highest = 0;
+        int lowest = Integer.MAX_VALUE;
 
         for(int i = 0; i < marks.size(); i++){
             sum += marks.get(i);
+
+            if(marks.get(i) > highest){
+                highest = marks.get(i);
+            }
+
+            if(marks.get(i) < lowest){
+                lowest = marks.get(i);
+            }
+
         }
 
         float average = sum / marks.size();
@@ -36,6 +47,8 @@ public class TotalMarks {
 
         System.out.println(sum);
         System.out.println(average);
+
+        System.out.println("Highest: "+ highest + " Lowest: " + lowest);
 
 
 
