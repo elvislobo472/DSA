@@ -22,6 +22,8 @@ public class TotalMarks {
         int highest = Integer.MIN_VALUE;
         int lowest = Integer.MAX_VALUE;
 
+        int aboveAverage = 0;
+
         for(int i = 0; i < marks.size(); i++){
             sum += marks.get(i);
 
@@ -38,6 +40,19 @@ public class TotalMarks {
 
         double average = (double) sum / marks.size();
 
+        for(int i = 0; i < marks.size(); i++){
+
+
+            if(marks.get(i) > average){
+                aboveAverage++ ;
+            }
+
+
+        }
+
+
+
+
 
 
         System.out.println(sum);
@@ -45,7 +60,7 @@ public class TotalMarks {
 
         System.out.println("Highest: "+ highest + " Lowest: " + lowest);
 
-
+        System.out.println("Above Average Scores: " +aboveAverage);
 
 
     }
