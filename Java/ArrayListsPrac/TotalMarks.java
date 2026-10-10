@@ -1,7 +1,6 @@
 package Coding.Java.ArrayListsPrac;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class TotalMarks {
 
@@ -9,13 +8,8 @@ public class TotalMarks {
     public static void main(String[] args) {
         ArrayList<Integer> marks = new ArrayList<>(5);
 
-        Scanner sc = new Scanner(System.in);
 
-//        for(int i = 0; i < 5; i++){  //Can't put marks.size() as it resolves to 0
-//            int data = sc.nextInt();
-//            marks.add(data);
-//
-//        }
+
 
         marks.add(72);
         marks.add(85);
@@ -24,8 +18,8 @@ public class TotalMarks {
         marks.add(78);
 
 
-        float sum = 0;
-        int highest = 0;
+        int sum = 0;
+        int highest = Integer.MIN_VALUE;
         int lowest = Integer.MAX_VALUE;
 
         for(int i = 0; i < marks.size(); i++){
@@ -41,7 +35,8 @@ public class TotalMarks {
 
         }
 
-        float average = sum / marks.size();
+
+        double average = (double) sum / marks.size();
 
 
 
