@@ -2,7 +2,7 @@ package Coding.Java.ArrayListsPrac;
 
 import java.util.ArrayList;
 
-public class fruitBasket {
+public class FruitBasket {
 
 
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class fruitBasket {
 
         System.out.println("Size: "+fruits.size());
 
-        System.out.println("First: " + fruits.get(1));
+        System.out.println("First: " + fruits.get(0));
 
         System.out.println("Last: " + fruits.get(fruits.size()-1));
 
