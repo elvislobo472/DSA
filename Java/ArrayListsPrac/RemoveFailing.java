@@ -9,18 +9,30 @@ public class RemoveFailing {
 
         ArrayList<Integer> marks = new ArrayList<>();
 
-//        marks.add(72);
-//        marks.add(35);
-//        marks.add(90);
-//        marks.add(28);
-//        marks.add(64);
-//        marks.add(31);
+        marks.add(72);
+        marks.add(35);
+        marks.add(90);
+        marks.add(28);
+        marks.add(64);
+        marks.add(31);
 
 
-        marks.add(30);
-        marks.add(20);
-        marks.add(85);
+//        marks.add(30);
+//        marks.add(20);
+//        marks.add(85);
 
+
+        for(int i=0; i < marks.size(); i++){
+
+            if(marks.get(i) < 40){
+                marks.remove(i);
+                i--;
+            }
+
+
+        }
+
+        System.out.println(marks);
 
 
 
