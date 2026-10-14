@@ -56,6 +56,20 @@ public class TaskManager {
 
         t1.markCompleted();
 
+        System.out.println();
+
+        t1.displayTask();
+
+        System.out.println();
+
+        t2.displayTask();
+
+        System.out.println();
+
+        t2.reopenTask();
+        System.out.println();
+
+        t2.displayTask();
 
 
 
