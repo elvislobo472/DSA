@@ -13,7 +13,7 @@ public class SafeHighest {
             return -1;
         }else {
 
-            int highest = sf.get(0);
+            int highest = sf.getFirst();
 
             for(int i = 1; i < sf.size(); i++){
 
