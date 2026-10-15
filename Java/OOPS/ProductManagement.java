@@ -30,8 +30,11 @@ class Product{
     }
 
     public void sell(int amount){
-        quantity -= amount;
-
+        if(amount > quantity) {
+            System.out.println("Sale is rejected as we have only "+quantity+ " in stock currently");
+        }else{
+            quantity -= amount;
+        }
     }
 
 
