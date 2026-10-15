@@ -4,7 +4,7 @@ package Coding.Java.OOPS;
 class Payment{
 
     public void processPayment(double amount){
-        System.out.println("Prcessing payment......");
+        System.out.println("Processing payment......");
     }
 
 }
@@ -14,7 +14,7 @@ class CreditCardPayment extends Payment {
 
     @Override
     public void processPayment(double amount){
-        System.out.println("Prcessing Credit card payment: " + amount);
+        System.out.println("Processing Credit card payment: " + amount);
     }
 
 }
@@ -24,7 +24,7 @@ class UPIPayment extends Payment {
 
     @Override
     public void processPayment(double amount){
-        System.out.println("Prcessing UPI payment: " + amount);
+        System.out.println("Processing UPI payment: " + amount);
     }
 
 }
@@ -33,7 +33,7 @@ class PayPalPayment extends Payment {
 
     @Override
     public void processPayment(double amount){
-        System.out.println("Prcessing PayPal payment: " + amount);
+        System.out.println("Processing PayPal payment: " + amount);
     }
 
 }
