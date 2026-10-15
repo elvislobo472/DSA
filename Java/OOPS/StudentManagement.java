@@ -12,6 +12,24 @@ class Student{
         System.out.println("Marks: " + marks);
     }
 
+
+    //Implemented Polymorphism
+
+    // both printDetails() have different parameters
+
+    public void printDetails(String name, int rollNumber){
+        System.out.println("Name: " + name);
+        System.out.println("Roll No: " + rollNumber);
+
+    }
+
+
+    public void printDetails(String name, double marks){
+        System.out.println("Name: " + name);
+
+        System.out.println("Marks: " + marks);
+    }
+
     Student(String name, int rollNumber, double marks){
         this.name = name;
         this.rollNumber = rollNumber;
@@ -33,6 +51,13 @@ public class StudentManagement {
         Student s2 = new Student("Akhil", 104, 88.0);
 
         s1.displayDetails();
-        s2.displayDetails();
+
+
+        System.out.println();
+        s1.printDetails(s1.name, s1.rollNumber);
+
+
+        System.out.println();
+        s2.printDetails(s2.name, s2.marks);
     }
 }
