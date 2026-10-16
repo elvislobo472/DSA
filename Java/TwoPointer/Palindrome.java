@@ -18,11 +18,9 @@ public class Palindrome {
 
         while(start < end){
 
-            if(result.charAt(start) == result.charAt(end)){
-                palindrome = true;
+            if(result.charAt(start) != result.charAt(end)){
+                return false;
 
-            }else{
-                palindrome = false;
             }
 
 
