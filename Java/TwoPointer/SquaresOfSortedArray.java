@@ -12,7 +12,7 @@ public class SquaresOfSortedArray {
 
         int[] result = new int[arr.length];
 
-        while(left < right){
+        while(left <= right){
 
             int leftSquare = arr[left] * arr[left];
             int rightSquare = arr[right] * arr[right];
@@ -45,7 +45,7 @@ public class SquaresOfSortedArray {
 
     public static void main(String[] args) {
 
-        int[] arr = {-4,-1,0,3,10};
+        int[] arr = {-7,-3,2,3,11};
 
         int[] result = sortedSquares(arr);
 
