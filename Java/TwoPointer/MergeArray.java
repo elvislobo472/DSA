@@ -6,36 +6,31 @@ public class MergeArray {
 
     public static void merge(int[] nums1, int m, int[] nums2, int n){
 
-        int[] res = new int[m+n];
-        int i = 0, j= 0, k= 0;
 
-        while(i < m && j < n){
-            if(nums1[i] < nums2[j]){
-                res[k] = nums1[i];
-                i++;
+        int i = m-1, j = n-1, k = m+n -1;
+
+        while(i >= 0 && j >= 0){
+            if(nums1[i] > nums2[j]){
+                nums1[k] = nums1[i];
+                i--;
             }else{
-                res[k] = nums2[j];
-                j++;
+                nums1[k] = nums2[j];
+                j--;
             }
 
-            k++;
+            k--;
 
         }
 
-        while(i < m){
-            res[k] = nums1[i];
-            i++;
-            k++;
-        }
 
         while(j < n){
-            res[k] = nums2[j];
+            nums1[k] = nums2[j];
             j++;
             k++;
         }
 
 
-        System.out.println(Arrays.toString(res));
+        System.out.println(Arrays.toString(nums1));
 
 
 
@@ -44,7 +39,7 @@ public class MergeArray {
 
 
     public static void main(String[] args) {
-        int[] nums1 = {1, 2, 3};
+        int[] nums1 = {1, 2, 3, 4,8,9};
         int[] nums2 = {2, 5, 6};
 
         int m = nums1.length;
