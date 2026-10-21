@@ -21,10 +21,14 @@ public class EmployeeRecords {
     }
 
 
-    public void getEmpId(){
+    public void getEmpId() {
+        if (empId < 0) {
+            System.out.println("Please enter a valid Employee ID");
 
-        System.out.println("Employee ID: "+ this.empId);
+        } else {
+            System.out.println("Employee ID: " + this.empId);
 
+        }
     }
 
 
@@ -41,10 +45,15 @@ public class EmployeeRecords {
 
 
 
-    public void getDepartmentName(){
+    public void getDepartmentName() {
+        if (departmentName.isEmpty()) {
+            System.out.println("Please enter the department");
+        } else {
+            System.out.println("Department Name: " + this.departmentName);
 
-        System.out.println("Department Name: " + this.departmentName);
+        }
     }
+
 
 
     public void setReportingManager(String reportingManager){
@@ -59,10 +68,13 @@ public class EmployeeRecords {
 
 
 
-    public void getReportingManager(){
-        System.out.println("Reporting Manager: " + this.reportingManager);
+    public void getReportingManager() {
+        if (reportingManager.isEmpty()) {
+            System.out.println("Please enter a valid Name");
+        } else {
+            System.out.println("Reporting Manager: " + this.reportingManager);
+        }
     }
-
 
 
 
