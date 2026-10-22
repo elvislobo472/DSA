@@ -13,9 +13,19 @@ public class Developer extends Employees{
 
 
     Developer(String name, String programmingLanguage, double salary){
-        super();
+        super(name, salary);
+
+        this.programmingLanguage =programmingLanguage;
 
     }
+
+
+    public void writeCode(){
+        System.out.println("This Employee does coding in " + programmingLanguage);
+    }
+
+
+
 
 
 }
