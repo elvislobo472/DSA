@@ -19,6 +19,7 @@ public class Car extends Vehicle {
 
     @Override
     public void displayDetails(){
+        System.out.println("===Car Details===");
         super.displayDetails();
         System.out.println("Number of Seats: " + numberOfSeats);
     }
