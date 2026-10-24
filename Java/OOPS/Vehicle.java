@@ -16,7 +16,7 @@ public class Vehicle {
 
     Vehicle(String brand, double rentalPriceDay){
         this.brand = brand;
-        this.rentalPricePerDay = rentalPricePerDay;
+        this.rentalPricePerDay = rentalPriceDay;
     }
 
 
