@@ -13,11 +13,18 @@ public class VehicleRental {
 
         m1.displayDetails();
 
+        System.out.println();
+
 
         Car c2 = new Car("'70 Dodge Charger", 50000, 2);
 
         c2.displayDetails();
 
+        System.out.println();
+
+        Motorcycle m2 = new Motorcycle("Triumph", 3000, 450);
+
+        m2.displayDetails();
 
 
 
