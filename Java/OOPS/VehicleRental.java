@@ -14,6 +14,15 @@ public class VehicleRental {
         m1.displayDetails();
 
 
+        Car c2 = new Car("'70 Dodge Charger", 50000, 2);
+
+        c2.displayDetails();
+
+
+
+
+
+
 
     }
 
