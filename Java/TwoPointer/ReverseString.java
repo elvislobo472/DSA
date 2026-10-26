@@ -37,7 +37,7 @@ public class ReverseString {
 
 
     public static void main(String[] args) {
-        String s = "ElvisLobo";
+        String s = "KennyJames";
 
         char[] arr = s.toCharArray();
 
