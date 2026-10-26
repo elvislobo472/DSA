@@ -30,9 +30,9 @@ public class TwoSumOne {
 
 
     public static void main(String[] args) {
-       int[] arr = {2, 7, 11, 15, 22, };
+       int[] arr = {2, 7, 11, 15, 22, 4, 12 };
 
-       int target = 33;
+       int target = 14;
 
        int[] result = twoSum(arr, target);
        System.out.println(
